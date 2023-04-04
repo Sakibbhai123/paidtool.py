@@ -119,7 +119,7 @@ def reg():
         to = open('/sdcard/Android/.bs7nt.txt', 'r').read()
     except (KeyError, IOError):
         reg2()
-    r = requests.get('https://raw.githubusercontent.com/Sakibbhai123/paidtool.py/main/approval.txt') 
+    r = requests.get('https://raw.githubusercontent.com/Sakibbhai123/paidtool.py/main/approval.txt').text 
     if to in r:
         time.sleep(2)
         bsn_menu()
